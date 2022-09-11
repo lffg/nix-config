@@ -2,7 +2,7 @@
 
 My home-manager configuration.
 
-Heavily inspired by [Luc Perkins' one](luc-nix-config).
+Heavily inspired by [Luc Perkins' one][luc-nix-config].
 
 [luc-nix-config]: https://github.com/lucperkins/nix-home-manager-config
 
