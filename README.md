@@ -13,7 +13,10 @@ Fresh machine:
 <!-- cspell:words lffg luiz -->
 
 ```sh
-nix build "github:lffg/nix-config#homeConfigurations.luiz.activationPackage"
+mkdir -p ~/.config
+git clone git@github.com:lffg/nix-config.git ~/.config/nix-config
+cd ~/.config/nix-config
+nix build ".#homeConfigurations.luiz.activationPackage"
 ./result/activate
 ```
 
