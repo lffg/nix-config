@@ -14,7 +14,7 @@
 
   home-manager = {
     enable = true;
-    path = null;
+    path = "${homeDirectory}/.config/nix-config";
   };
 
   direnv = {
