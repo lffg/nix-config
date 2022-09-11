@@ -10,7 +10,7 @@ with pkgs; [
 
   # Node
   nodejs-16_x
-  yarn
+  (yarn.override {nodejs = nodejs-16_x;})
 
   # Python
   python38
@@ -25,13 +25,12 @@ with pkgs; [
   postgresql_14
 
   # Fonts
-  iosevka
-  (nerdfonts.override { fonts = [ "FiraCode" ]; })
+  iosevka-bin
+  (nerdfonts.override {fonts = ["FiraCode"];})
 
   # Misc
   cmake
   curl
-  gcc
   clang
   coreutils
   openssl
