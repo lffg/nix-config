@@ -4,9 +4,12 @@ with pkgs; [
   google-cloud-sdk
 
   # Nix tools
+  # rnix-lsp
   comma
-  rnix-lsp
   alejandra
+
+  # Rust
+  rustup
 
   # Node
   nodejs-16_x
