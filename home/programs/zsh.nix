@@ -12,7 +12,7 @@
     "," = "comma";
     cls = "clear";
     del = "trash";
-    psql = "PAGER='less -S' psql";
+    psqll = "PAGER='less -S' psql";
 
     # Typos:
     "cd.." = "cd ..";
