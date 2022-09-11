@@ -15,7 +15,7 @@
     };
 
     package.disabled = true;
-    line_break.disabled = true;
+    line_break.disabled = false;
 
     c.disabled = true;
     rust.disabled = true;
