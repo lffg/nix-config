@@ -24,12 +24,13 @@
     cdd = "cd ~/Desktop && cls";
 
     # Nix-related utilities:
+    nd = "nix develop '.#' --command $(which zsh)";
+    ns = "nix-shell --command $(which zsh)";
     xx = ''
       home-manager switch --flake ${homeDirectory}/.config/nix-config && \
         source ${homeDirectory}/.zshrc
     '';
     ncfg = "code ${homeDirectory}/.config/nix-config";
-    # TODO: Add `ns` and `nd`. How to handle `--command` path using HM?
 
     # Direnv helpers:
     da = "direnv allow";
