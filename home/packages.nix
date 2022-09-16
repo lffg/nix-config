@@ -10,6 +10,7 @@ with pkgs; [
 
   # Rust
   rustup
+  libiconv
 
   # Node
   nodejs-16_x
