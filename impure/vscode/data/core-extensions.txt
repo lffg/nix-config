@@ -1,0 +1,15 @@
+EditorConfig.EditorConfig
+esbenp.prettier-vscode
+GitHub.github-vscode-theme
+iliazeus.vscode-ansi
+jnoortheen.nix-ide
+PKief.material-icon-theme
+redhat.vscode-yaml
+rust-lang.rust-analyzer
+streetsidesoftware.code-spell-checker
+streetsidesoftware.code-spell-checker-portuguese
+streetsidesoftware.code-spell-checker-portuguese-brazilian
+tamasfe.even-better-toml
+usernamehw.errorlens
+WakaTime.vscode-wakatime
+yzhang.markdown-all-in-one

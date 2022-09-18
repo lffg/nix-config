@@ -1,0 +1,10 @@
+[
+  {
+    "command": "-workbench.action.showAllSymbols",
+    "key": "cmd+t"
+  },
+  {
+    "command": "workbench.action.terminal.toggleTerminal",
+    "key": "cmd+t"
+  }
+]

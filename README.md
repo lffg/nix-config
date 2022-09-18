@@ -1,10 +1,11 @@
 # Nix Config
 
-My home-manager configuration.
+This repository contains my Home Manager configuration using Nix. It also
+contains other programs "impure" configurations.
 
-Heavily inspired by [Luc Perkins' one][luc-nix-config].
+Heavily inspired by [Luc Perkins' one][luc-nixcfg].
 
-[luc-nix-config]: https://github.com/lucperkins/nix-home-manager-config
+[luc-nixcfg]: https://github.com/lucperkins/nix-home-manager-config
 
 ## Setup
 

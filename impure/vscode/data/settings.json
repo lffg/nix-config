@@ -1,0 +1,124 @@
+{
+  /**
+   * General
+   */
+  "window.zoomLevel": 1,
+  "window.restoreWindows": "none",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.untitled.hint": "hidden",
+  /**
+   * Appearance
+   */
+  "editor.fontFamily": "Iosevka Fixed",
+  "editor.fontSize": 14,
+  "editor.letterSpacing": 0.4,
+  "editor.roundedSelection": false,
+  "editor.foldingHighlight": false,
+  "editor.wrappingIndent": "indent",
+  "editor.renderWhitespace": "trailing",
+  "editor.rulers": [80, 100],
+  "editor.minimap.enabled": false,
+  "editor.minimap.size": "fill",
+  // Workbench
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 12,
+  // Integrated terminal
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontFamily": "Iosevka Nerd Font Mono",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  /**
+   * Behavior
+   */
+  "editor.formatOnSave": true,
+  "editor.autoIndent": "none",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",./?<>",
+  // Workbench
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.languageDetection": false,
+  // Files
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  // Integrated terminal
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.autoReveal": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "scm.defaultViewMode": "tree",
+  // Git
+  "git.enableSmartCommit": true,
+  "git.mergeEditor": false,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  // Etc
+  "diffEditor.ignoreTrimWhitespace": false,
+  /**
+   * Associations
+   */
+  "files.associations": {
+    "BUILD": "starlark",
+    "WORKSPACE": "starlark"
+  },
+  /**
+   * Semantic coloring
+   */
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "comment:rust": "#aaa",
+      "comment.documentation:rust": "#6a9955",
+      "*.mutable": {
+        "fontStyle": "underline"
+      },
+      "*.unsafe:rust": {
+        "fontStyle": "bold underline italic"
+      }
+    }
+  },
+  /**
+   * Extension configuration
+   */
+  // Error lens
+  "errorLens.messageMaxChars": 80,
+  "errorLens.onSave": false,
+  "errorLens.onSaveTimeout": 2000,
+  "errorLens.enabled": true,
+  // Rust Analyzer
+  "rust-analyzer.imports.granularity.enforce": true,
+  "rust-analyzer.imports.prefix": "crate",
+  "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "always",
+  "rust-analyzer.lens.run.enable": false,
+  "rust-analyzer.lens.debug.enable": false,
+  "rust-analyzer.diagnostics.disabled": ["unresolved-proc-macro"],
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  // Prettier
+  "prettier.proseWrap": "always",
+  "[json][jsonc][javascript][typescript][css][html][yaml][typescriptreact][scss]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Nix
+  "nix.formatterPath": "alejandra",
+  // Spell checker
+  "cSpell.enabled": true,
+  "cSpell.language": "en,pt",
+  // Material Icon Theme
+  "material-icon-theme.files.associations": {
+    "BUILD": "bazel",
+    "WORKSPACE": "bazel"
+  },
+  // Git Lens
+  "gitlens.codeLens.enabled": false,
+  // Etc
+  "redhat.telemetry.enabled": false
+}

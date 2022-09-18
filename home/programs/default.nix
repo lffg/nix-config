@@ -3,12 +3,13 @@
   pkgs,
   ...
 }: {
-  git = import ./git.nix {inherit pkgs;};
+  git = import ./git.nix {
+    inherit pkgs;
+  };
 
-  zsh = import ./zsh.nix {inherit homeDirectory;};
-
-  # TODO: Declare VSCode configuration (incl. extensions).
-  # vscode = import ./vscode.nix { inherit pkgs; };
+  zsh = import ./zsh.nix {
+    inherit homeDirectory;
+  };
 
   starship = import ./starship.nix;
 
