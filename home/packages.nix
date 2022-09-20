@@ -9,8 +9,8 @@ with pkgs; [
   alejandra
 
   # Rust
-  rustup
-  libiconv
+  # rustup
+  # libiconv
 
   # Node
   nodejs-16_x
