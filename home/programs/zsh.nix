@@ -5,7 +5,11 @@
   enableAutosuggestions = true;
   enableCompletion = true;
 
-  initExtra = builtins.readFile ./zsh-init.sh;
+  initExtra = ''
+    ${builtins.readFile ./zsh-init.sh}
+
+    ${builtins.readFile ./zsh-fns.sh}
+  '';
 
   shellAliases = {
     # General commands:
