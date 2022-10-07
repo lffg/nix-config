@@ -12,6 +12,10 @@
     packages = import ./packages.nix {
       inherit pkgs;
     };
+
+    activation = {
+      yarn-pkgs = "yarn global add glob-cli trash-cli";
+    };
   };
 
   programs = import ./programs {
