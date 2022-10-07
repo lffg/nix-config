@@ -21,7 +21,7 @@ in {
   };
 
   ignores = [
-    "__ignore__"
+    "__ignore__*"
     ".DS_Store"
   ];
 
@@ -30,6 +30,15 @@ in {
 
     ca = "commit --amend";
     cane = "commit --amend --no-edit";
+
+    su = "stash push";
+    sus = "stash push --staged";
+    sp = "stash pop";
+
+    rh1 = "reset HEAD^";
+
+    rc = "rebase --continue";
+    ra = "rebase --abort";
 
     pushd = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)";
     pushf = "push --force-with-lease";
