@@ -28,6 +28,7 @@ in {
   aliases = {
     l = "log --oneline";
 
+    c = "commit";
     ca = "commit --amend";
     cane = "commit --amend --no-edit";
 
@@ -37,6 +38,7 @@ in {
 
     rh1 = "reset HEAD^";
 
+    r = "rebase";
     rc = "rebase --continue";
     ra = "rebase --abort";
 

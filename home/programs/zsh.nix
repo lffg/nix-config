@@ -13,7 +13,7 @@
 
   shellAliases = {
     # General commands:
-    "," = "comma";
+    g = "git";
     cls = "clear";
     del = "trash";
     psqll = "PAGER='less -S' psql";

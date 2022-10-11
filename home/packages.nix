@@ -5,7 +5,6 @@ with pkgs; [
 
   # Nix tools
   # rnix-lsp
-  comma
   alejandra
 
   # Rust
