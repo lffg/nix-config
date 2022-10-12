@@ -4,6 +4,7 @@
   enableSyntaxHighlighting = true;
   enableAutosuggestions = true;
   enableCompletion = true;
+  autocd = true;
 
   initExtra = ''
     ${builtins.readFile ./zsh-init.sh}
