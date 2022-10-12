@@ -8,8 +8,10 @@ with pkgs; [
   alejandra
 
   # Rust
-  # rustup
-  # libiconv
+  # libiconv | zld
+  (rust-bin.stable."1.64.0".default.override {
+    extensions = ["rust-src"];
+  })
 
   # Node
   nodejs-18_x
