@@ -33,22 +33,21 @@ with pkgs; [
   iosevka-bin
   (nerdfonts.override {fonts = ["FiraCode"];})
 
-  # Misc
-  cmake
-  curl
-  clang
-  coreutils
-  openssl
-  tree
-  wget
-  youtube-dl
-  ffmpeg
+  # Compression
   gnutar
   zstd
+
+  # Utilities
+  curl
+  tree
   jq
   bat
   exa
   hexyl
   tokei
   httpie
+
+  # Misc
+  coreutils
+  openssl
 ]
