@@ -7,6 +7,9 @@ with pkgs; [
   # rnix-lsp
   alejandra
 
+  # Shell
+  shellcheck
+
   # Rust
   # libiconv | zld
   (rust-bin.stable."1.64.0".default.override {

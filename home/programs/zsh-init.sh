@@ -1,5 +1,8 @@
-# Load secrets.
+#!/usr/bin/env bash
+
+# Load secrets
 if [ -e ~/.env.sh ]; then
+  # shellcheck disable=SC1090
   . ~/.env.sh
 fi
 
@@ -21,6 +24,7 @@ fix_home_manager_path_priority() {
 
 [ -n "$IN_NIX_SHELL" ] && fix_home_manager_path_priority
 
+# shellcheck disable=SC1091
 . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
 
 export DIRENV_LOG_FORMAT=''
