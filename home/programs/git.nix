@@ -14,6 +14,16 @@ in {
 
     pull.rebase = "true";
     init.defaultBranch = "main";
+
+    commit.gpgsign = "true";
+    gpg.program = "gpg2";
+
+    protocol.keybase.allow = "always";
+    credential.helper = "osxkeychain";
+
+    user = {
+      signingkey = "76C182B31CED00EA";
+    };
   };
 
   delta = {
