@@ -16,6 +16,13 @@
     activation = {
       yarn-pkgs = "yarn global add glob-cli trash-cli";
     };
+
+    sessionVariables = {
+      # FIXME: Refactor this in a more organized way.
+      OPENSSL_DIR = "${pkgs.openssl.bin}/bin";
+      OPENSSL_LIB_DIR = "${pkgs.openssl.out}/lib";
+      OPENSSL_INCLUDE_DIR = "${pkgs.openssl.out.dev}/include";
+    };
   };
 
   programs = import ./programs {
