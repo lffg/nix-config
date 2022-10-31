@@ -13,7 +13,7 @@ with pkgs; [
   # Rust
   # libiconv | zld
   (rust-bin.stable."1.64.0".default.override {
-    extensions = ["rust-src" "rust-analyzer"];
+    extensions = ["rust-src"];
   })
 
   # Node
