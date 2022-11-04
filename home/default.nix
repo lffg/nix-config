@@ -14,7 +14,7 @@
     };
 
     activation = {
-      yarn-pkgs = "yarn global add glob-cli trash-cli";
+      yarn-pkgs = "${./activation.sh}";
     };
 
     sessionVariables = {
