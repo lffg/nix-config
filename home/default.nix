@@ -22,6 +22,9 @@
       OPENSSL_DIR = "${pkgs.openssl.bin}/bin";
       OPENSSL_LIB_DIR = "${pkgs.openssl.out}/lib";
       OPENSSL_INCLUDE_DIR = "${pkgs.openssl.out.dev}/include";
+
+      JDK_HOME = "${pkgs.jdk}";
+      JAVA_HOME = "${pkgs.jdk}";
     };
   };
 
