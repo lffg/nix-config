@@ -15,6 +15,32 @@ gcp() {
     esac
 }
 
+DEFAULT_PG_INIT_DATA_DIR="$HOME/.temp/pg"
+export PGDATA="${PGDATA:-$DEFAULT_PG_INIT_DATA_DIR}"
+
+pg_init() {
+    local DATA_DIR="$DEFAULT_PG_INIT_DATA_DIR"
+
+    if [ "$DATA_DIR" != "$PGDATA" ]; then
+        >&2 echo "[pg_init] unexpected \`PGDATA\`"
+        return
+    fi
+
+    if [ ! -d "$DATA_DIR" ]; then
+        >&2 echo "[pg_init] unitialized database directory, initializing it..."
+        mkdir -p "$DATA_DIR"
+        pg_ctl init
+    fi
+
+    if pg_ctl status; then
+        >&2 echo "[pg_init] pg already running"
+        return
+    fi
+
+    export PGDATA="$DATA_DIR"
+    pg_ctl start
+}
+
 rw() {
     if ! first=$(which "$1"); then
         >&2 echo "$first"
