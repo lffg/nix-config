@@ -16,6 +16,9 @@ with pkgs; [
     extensions = ["rust-src"];
   })
 
+  # Java
+  jdk
+
   # Node
   nodejs-18_x
   (yarn.override {nodejs = nodejs-18_x;})
